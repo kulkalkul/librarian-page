@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <div id="main"></div>
+    <script type="module">
+    import init from "/librarian-page/assets/dioxus/librarian.js";
+    init("/librarian-page/assets/dioxus/librarian_bg.wasm").then(wasm => {
+      if (wasm.__wbindgen_start == undefined) {
+        wasm.main();
+      }
+    });
+    </script>
+    </body>
+</html>
